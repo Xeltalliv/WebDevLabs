@@ -1,0 +1,85 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+div {
+	/*border: 1px solid black;*/
+	min-width: 10px;
+	min-height: 10px;
+	overflow: auto;
+}
+.title {
+	background-color: #ffffff;
+	padding: 10px;
+	margin: 10px 20px;
+}
+.main {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+.text {
+	padding: 5px;
+}
+.endsVertical {
+	min-height: 110px;
+	background-color: #aaaaff;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.endsTop {
+	justify-content: left;
+}
+.endsBottom {
+	justify-content: right;
+}
+.middle {
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+}
+.endsHorizontal {
+	flex: 1;
+	background-color: #aaaaff;
+}
+.left {
+	flex: 2;
+	background-color: #ffaa88;
+}
+.right {
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+}
+.middle2 {
+	flex: 3;
+}
+.rightTop {
+	background-color: #ffaa88;
+	flex: 1;
+}
+.rightBottom {
+	min-height: 50px;
+	background-color: #aaffaa;
+}
+.middleTop {
+	min-height: 50px;
+	background-color: #aaffaa;
+}
+.middleBottom {
+	flex: 1;
+}
+.endsText {
+	flex: 1;
+}
+.endsTextTop {
+	text-align: right;
+}
+.endsTextBottom {
+	text-align: left;
+}
+.fitIn {
+	wwidth: 100%;
+}

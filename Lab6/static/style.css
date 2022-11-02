@@ -1,0 +1,144 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+div {
+	/*border: 1px solid black;*/
+	overflow: auto;
+}
+.title {
+	background-color: #ffffff;
+	padding: 10px;
+	margin: 10px 20px;
+}
+.main {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+.text {
+	padding: 5px;
+}
+.endsVertical {
+	min-height: 110px;
+	background-color: #aaaaff;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.endsTop {
+	justify-content: left;
+}
+.endsBottom {
+	justify-content: right;
+}
+.middle {
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+}
+.endsHorizontal {
+	flex: 1;
+	background-color: #aaaaff;
+}
+.left {
+	flex: 2;
+	background-color: #ffaa88;
+}
+.right {
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+}
+.middle2 {
+	flex: 3;
+}
+.rightTop {
+	background-color: #ffaa88;
+	flex: 1;
+}
+.rightBottom {
+	min-height: 50px;
+	background-color: #aaffaa;
+}
+.middleTop {
+	min-height: 50px;
+	background-color: #aaffaa;
+}
+.middleBottom {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+.notification {
+	height: 0px;
+	background-color: #221811;
+	border-bottom: 3px ridge black;
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	animation: appear 200ms ease-in-out forwards;
+	overflow: hidden;
+}
+.notificationHide {
+	animation: disappear 200ms ease-in-out forwards;
+}
+@keyframes appear {
+	from {height: 0px;}
+	to {height: 30px;}
+}
+@keyframes disappear {
+	from {height: 30px;}
+	to {height: 0px;}
+}
+.notificationInput {
+	flex: 1;
+	text-align: left;
+	background: none;
+	color: #fff;
+}
+.notificationText {
+	flex: 1;
+	color: #fff;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+.notificationButton {
+	width: 30px;
+}
+.notificationButtonInvisible {
+	width: 30px;
+	background: none;
+	border: none;
+	color: #3eaaee;
+}
+.notificationAdd {
+	height: 20px;
+}
+.middleBottomMain {
+	flex: 1;
+}
+.endsText {
+	flex: 1;
+}
+.endsTextTop {
+	text-align: right;
+}
+.endsTextBottom {
+	text-align: left;
+}
+.fitIn {
+	wwidth: 100%;
+}
+@media (max-width: 800px) {
+	.endsVertical {
+		flex-direction: column;
+	}
+	.middle {
+		flex-direction: column;
+	}
+}

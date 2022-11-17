@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Lab 7/Var 8</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/style.css" rel="stylesheet">
+		<script src="js/admin.js" defer></script>
+		<script src="js/admin_data_format.js" defer></script>
+	</head>
+	<body class="main">
+		<div class="endsVertical endsTop">
+			<div class="title"><h1>Admin contol pannel</h1></div>
+			<div class="endsText endsTextBottom text">
+				<p>A page to configure the content of the main pages</p>
+			</div>
+		</div>
+		<div class="middle text">
+			<div class="adminLeft text">
+				<h3>Titles</h3>
+				<table>
+					<tr>
+						<td>Title 1</td>
+						<td><textarea id="title1"></textarea></td>
+					</tr>
+					<tr>
+						<td>Title 2</td>
+						<td><textarea id="title2"></textarea></td>
+					</tr>
+				</table>
+				<h3>Blocks</h3>
+				<table>
+					<tr>
+						<td>Block 1</td>
+						<td><textarea id="block1"></textarea></td>
+					</tr>
+					<tr>
+						<td>Block 2</td>
+						<td><textarea id="block2"></textarea></td>
+					</tr>
+					<tr>
+						<td>Block 3</td>
+						<td><textarea id="block3"></textarea></td>
+					</tr>
+					<tr>
+						<td>Block 4</td>
+						<td><textarea id="block4"></textarea></td>
+					</tr>
+					<tr>
+						<td>Block 5</td>
+						<td><textarea id="block5"></textarea></td>
+					</tr>
+					<tr>
+						<td>Block 6</td>
+						<td><textarea id="block6"></textarea></td>
+					</tr>
+					<tr>
+						<td>Block 7</td>
+						<td><textarea id="block7"></textarea></td>
+					</tr>
+				</table>
+				<h3>Buttons</h3>
+				<table>
+					<tr>
+						<td>Start</td>
+						<td><input type="text" id="start"></td>
+					</tr>
+					<tr>
+						<td>Play</td>
+						<td><input type="text" id="play"></td>
+					</tr>
+					<tr>
+						<td>Reload</td>
+						<td><input type="text" id="reload"></td>
+					</tr>
+					<tr>
+						<td>Close</td>
+						<td><input type="text" id="close"></td>
+					</tr>
+					<tr>
+						<td>Erase</td>
+						<td><input type="text" id="erase"></td>
+					</tr>
+				</table>
+			</div>
+			<div class="adminRight text">
+				<h3>Messages</h3>
+				<table>
+					<tr>
+						<td>Work opened</td>
+						<td><input type="text" id="workShown"></td>
+					</tr>
+					<tr>
+						<td>Work closed</td>
+						<td><input type="text" id="workHidden"></td>
+					</tr>
+					<tr>
+						<td>Animation started</td>
+						<td><input type="text" id="animationStarted"></td>
+					</tr>
+					<tr>
+						<td>Animation reloaded</td>
+						<td><input type="text" id="animationReloaded"></td>
+					</tr>
+				</table>
+				<h3>Textures</h3>
+				<table>
+					<tr>
+						<td>Top left</td>
+						<td><input type="text" id="texture1"></td>
+					</tr>
+					<tr>
+						<td>Top right</td>
+						<td><input type="text" id="texture2"></td>
+					</tr>
+					<tr>
+						<td>Bottom left</td>
+						<td><input type="text" id="texture3"></td>
+					</tr>
+					<tr>
+						<td>Bottom right</td>
+						<td><input type="text" id="texture4"></td>
+					</tr>
+				</table>
+				<h3>Other settings</h3>
+				<table>
+					<tr>
+						<td>Framerate</td>
+						<td><input type="number" id="framerate"></td>
+					</tr>
+					<tr>
+						<td>Circle color</td>
+						<td><input type="color" id="circleColor"></td>
+					</tr>
+					<tr>
+						<td>Circle radius</td>
+						<td><input type="number" id="circleRadius"></td>
+					</tr>
+					<tr>
+						<td>Border color</td>
+						<td><input type="color" id="borderColor"></td>
+					</tr>
+					<tr>
+						<td>Border radius</td>
+						<td><input type="number" id="borderRadius"></td>
+					</tr>
+					<tr>
+						<td>Control bar height</td>
+						<td><input type="number" id="controlBarHeight"></td>
+					</tr>
+					<tr>
+						<td>Width in percent</td>
+						<td><input type="number" id="width"></td>
+					</tr>
+					<tr>
+						<td>Height in percent</td>
+						<td><input type="number" id="height"></td>
+					</tr>
+					<tr>
+						<td># of block with "Play" button</td>
+						<td><input type="number" id="playBlock"></td>
+					</tr>
+					<tr>
+						<td># of block with animation</td>
+						<td><input type="number" id="animationBlock"></td>
+					</tr>
+					<tr>
+						<td># of block with list of actions</td>
+						<td><input type="number" id="logBlock"></td>
+					</tr>
+					<tr>
+						<td>Animation path</td>
+						<td><input type="text"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="endsVertical endsBottom">
+			<div class="endsText endsTextBottom text">
+				<button id="save">Save</button>
+				<button id="cancel">Cancel</button>
+				<span id="status"></span>
+			</div>
+			<div class="title"><h1>Admin contol pannel</h1></div>
+		</div>
+	</body>
+</html>

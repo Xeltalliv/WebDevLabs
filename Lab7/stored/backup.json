@@ -1,0 +1,44 @@
+{
+	"content": {
+		"title": ["Start", "End"],
+		"block": ["hello 1", "hello 2", "hello 3", "hello 4", "hello 5", "hello 6", "hello 7"]
+	},
+	"animation": {
+		"animationBlock": 5,
+		"playBlock": 3,
+		"logBlock": 4,
+		"width": 0.7,
+		"height": 0.9,
+		"text": {
+			"play": "Play",
+			"start": "Start",
+			"close": "Close",
+			"reload": "Reload",
+			"erase": "Erase",
+			"workShown": "Work opened",
+			"workHidden": "Work closed",
+			"animationStart": "Animation started",
+			"animationReload": "Animation reloaded"
+		},
+		"textures": [
+			"images/img1.png",
+			"images/img2.png",
+			"images/img3.png",
+			"images/img4.png"
+		],
+		"fps": 30,
+		"circleColor": "#00ff00",
+		"circleRadius": 10,
+		"borderColor": "#00ff00",
+		"borderRadius": 5,
+		"controlBarHeight": 40,
+		"dirs": [
+			{"x":  1, "y":  0},
+			{"x":  0, "y": -1},
+			{"x": -1, "y":  0},
+			{"x":  0, "y":  1},
+			{"x":  1, "y":  0},
+			"stop"
+		]
+	}
+}

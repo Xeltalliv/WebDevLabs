@@ -139,7 +139,7 @@ function outputEvents() {
 	outputBlock = create("div");
 	id("block"+anim.logBlock).append(outputBlock);
 	for(let i=0; i<eventCount; i++) {
-		let time = new Date(localStorage.getItem("eventTime"+i) | 0);
+		let time = new Date(+localStorage.getItem("eventTime"+i));
 		let timeSpan = create("span");
 		timeSpan.innerText = "["+time.toLocaleTimeString()+"]";
 		timeSpan.title = time.toString();
